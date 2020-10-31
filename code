@@ -1,5 +1,6 @@
 print("Press 1- Speed Calculation")
 print("Press 2- Interest Calculation")
+print("Press 3- Ohm's Law")
 a= int(input("Enter Key to Start")
 
 if(a==1):
@@ -10,10 +11,15 @@ if(a==1):
 
 elif(a==2):
 	p=int(input("Enter Principal Amount (P) ::")
-  r=float(input("Enter Rate (R) ::")
-  t=int(input("Enter Time (R) ::")
-  i=(p*r*t)/100
-  print("Interest is :{0:.2f}  kms/hr".format(i))
+	r=float(input("Enter Rate (R) ::")
+	t=int(input("Enter Time (R) ::")
+	i=(p*r*t)/100
+	print("Interest is :{0:.2f}  kms/hr".format(i))
+elif(a==3):
+	v=float(input("Enter Voltage (V) ::")
+	r=float(input("Enter Resistance (R) ::")
+	i=v/r
+	print("Current is :{0:.2f}  amp".format(i))
 else:
   print("OPPs Wrong Selection")
 
