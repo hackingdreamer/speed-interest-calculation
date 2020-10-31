@@ -1,25 +1,43 @@
 print("Press 1- Speed Calculation")
 print("Press 2- Interest Calculation")
 print("Press 3- Ohm's Law")
+print("Press 4- Find given year is a leap year or not")
+print("Press 5- Swap two numbers")
 a= int(input("Enter Key to Start")
 
 if(a==1):
-  d=int(input("Enter the Distance :: in kms")
-  t=int(input("Enter the Time :: in Hrs")
-  s=d/t
-  print("Speed is :{0:.2f}  kms/hr".format(s))
-
+	d=int(input("Enter the Distance :: in kms")
+	t=int(input("Enter the Time :: in Hrs")
+	s=d/t
+	print("Speed is :{0:.2f}  kms/hr".format(s))
+	break;
 elif(a==2):
 	p=int(input("Enter Principal Amount (P) ::")
 	r=float(input("Enter Rate (R) ::")
 	t=int(input("Enter Time (R) ::")
 	i=(p*r*t)/100
 	print("Interest is :{0:.2f}  kms/hr".format(i))
+	break;
 elif(a==3):
 	v=float(input("Enter Voltage (V) ::")
 	r=float(input("Enter Resistance (R) ::")
 	i=v/r
 	print("Current is :{0:.2f}  amp".format(i))
+	break;
+elif(a==4):
+	year=int(input("Enter year to check")
+	if(year % 4==0 and year % 100 !=0 or year % 400==0):
+	    print(year,"is a Leap year")
+	else:
+	    print(year,"is Not a Leap year")
+	break;
+elif(a==5):
+	x=int(input("Enter value of x :: ")
+	y=int(input("Enter value of y :: ")
+	print("Before Swapping :: \n X=" , x , "Y=", y)
+	x,y = y,x
+	print("After Swapping :: \n X=" , x , "Y=", y)
+	break;
 else:
   print("OPPs Wrong Selection")
 
