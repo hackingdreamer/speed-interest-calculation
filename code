@@ -1,0 +1,21 @@
+print("Press 1- Speed Calculation")
+print("Press 2- Interest Calculation")
+a= int(input("Enter Key to Start")
+
+if(a==1):
+  d=int(input("Enter the Distance :: in kms")
+  t=int(input("Enter the Time :: in Hrs")
+  s=d/t
+  print("Speed is :{0:.2f}  kms/hr".format(s))
+
+elif(a==2):
+	p=int(input("Enter Principal Amount (P) ::")
+  r=float(input("Enter Rate (R) ::")
+  t=int(input("Enter Time (R) ::")
+  i=(p*r*t)/100
+  print("Interest is :{0:.2f}  kms/hr".format(i))
+else:
+  print("OPPs Wrong Selection")
+
+
+
