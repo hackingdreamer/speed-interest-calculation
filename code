@@ -6,11 +6,11 @@ print("Press 5- Swap two numbers")
 a= int(input("Enter Key to Start")
 
 if(a==1):
-  d=int(input("Enter the Distance :: in kms")
-  t=int(input("Enter the Time :: in Hrs")
-  s=d/t
-  print("Speed is :{0:.2f}  kms/hr".format(s))
-  break;
+	d=int(input("Enter the Distance :: in kms")
+	t=int(input("Enter the Time :: in Hrs")
+	s=d/t
+	print("Speed is :{0:.2f}  kms/hr".format(s))
+	break;
 elif(a==2):
 	p=int(input("Enter Principal Amount (P) ::")
 	r=float(input("Enter Rate (R) ::")
